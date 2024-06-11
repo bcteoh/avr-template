@@ -22,17 +22,30 @@ function App() {
     client.models.Todo.delete({ id })
   }
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f560a9146dc3892d4ec0b9d514702e665fdfdc91
   return (
     <main>
       <h1>My todos</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
+<<<<<<< HEAD
         {todos.map((todo) => (<li 
 
           onClick={() => deleteTodo(todo.id)}
 
           key={todo.id}>{todo.content}</li>
+=======
+        {todos.map((todo) => (
+          <li 
+            
+            onClick={() => deleteTodo(todo.id)}
+            
+            key={todo.id}>{todo.content}</li>
+>>>>>>> f560a9146dc3892d4ec0b9d514702e665fdfdc91
         ))}
       </ul>
       <div>
